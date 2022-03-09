@@ -26,7 +26,7 @@ android {
     defaultConfig {
         applicationId "com.example.wordsapp"
         minSdkVersion 19
-        targetSdkVersion 31
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -63,4 +63,9 @@ dependencies {
 
     implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    androidTestImplementation 'com.android.support.test.espresso:espresso-contrib:3.0.2'
+    androidTestImplementation 'androidx.navigation:navigation-testing:2.3.5'
+
+    debugImplementation 'androidx.fragment:fragment-testing:1.3.6'
 }
